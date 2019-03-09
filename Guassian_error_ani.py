@@ -12,7 +12,7 @@ A,mu,sigma = 10,5,0.5
 
 #Define function to generate the data
 def plot_for_offset(n, y_max):
-    x = np.linspace(1,100,100,endpoint=False)
+    x = np.linspace(1,10,100,endpoint=False)
     y_1 = np.zeros(100)  
     for i in range(0,n):
         y = A*np.exp(-(x-mu)**2/2/sigma**2) 
