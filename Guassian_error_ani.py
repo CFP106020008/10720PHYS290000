@@ -1,6 +1,6 @@
 '''
 Code origin: https://ndres.me/post/matplotlib-animated-gifs-easily/
-Editot: julius52700
+Editor: julius52700
 '''
 import matplotlib
 import matplotlib.pyplot as plt
@@ -12,13 +12,8 @@ A,mu,sigma = 10,5,0.5
 
 #Define function to generate the data
 def plot_for_offset(n, y_max):
-    x = np.linspace(0,10,100,endpoint=False)
-    y = A*np.exp(-(x-mu)**2/2/sigma**2) 
-    dy = np.random.normal(0,2,100)
-    y += dy
-    y_1 = y
-    
-    for i in range(1,n):
+      
+    for i in range(0,n):
         y = A*np.exp(-(x-mu)**2/2/sigma**2) 
         dy = np.random.normal(1,1,100)
         y += dy
